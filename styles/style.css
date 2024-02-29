@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#tv {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #1d1d1c;
+  position: relative;
+}
+#tv .container {
+  width: 70%;
+  display: grid;
+  place-items: center;
+  gap: 2rem 0;
+}
+#tv .container .logo {
+  width: 70px;
+  display: grid;
+  place-items: center;
+}
+#tv .container .logo img {
+  width: 100%;
+  height: auto;
+}
+#tv .container .img {
+  width: 70%;
+}
+#tv .container .img .video {
+  position: relative;
+  border-radius: 9px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+#tv .container .img .video .elementor-element {
+  width: 100%;
+}
+#tv .container .img .video .btn-play {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  z-index: 3;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1843137255);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 50px;
+}
+#tv .container .img .video .btn-play img {
+  width: 40%;
+}
+#tv .copyrights {
+  position: absolute;
+  bottom: 2%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+#tv .copyrights .copy {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+  font-size: 0.45rem;
+  opacity: 1;
+  color: #fff;
+}
+#tv .copyrights .copy svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+@media (max-width: 800px) {
+  #tv .container {
+    width: 80%;
+  }
+  #tv .container .logo {
+    height: 30px;
+  }
+  #tv .container .img {
+    width: 100%;
+  }
+  #tv .container .img .video #lazyframe {
+    height: 170px;
+  }
+  #tv .container .img .video .btn-play {
+    width: 60px;
+    height: 60px;
+  }
+}/*# sourceMappingURL=style.css.map */
